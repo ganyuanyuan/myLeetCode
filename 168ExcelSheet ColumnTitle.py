@@ -1,19 +1,16 @@
 class Solution:
-    def maxProfit(self, prices):
+    def convertToTitle(self, n):
         """
-        :type prices: List[int]
-        :rtype: int
+        :type n: int
+        :rtype: str
         """
-        if len(prices)==0 or len(prices)==1:
-            return 0
-
-        templist = []
-        for i in range(1,len(prices)):
-            templist.append(prices[i]-prices[i-1])
-
-        ans = 0
-        for item in templist:
-            if item >0:
-                ans += item
-
-        return ans
+        ans = ''
+        while n > 0:
+            if n%26==0:
+                ans += 'Z'
+                n = n//26 -1
+            else:
+                ans += chr(n%26 + 64)
+                n = n//26
+        return ans[::-1]
+                
