@@ -30,7 +30,3 @@ class Solution(object):
             queue = nextQueue
         ans.reverse()
         return ans
-
-
-#####################
-# no need to explain, just regular bfs.
