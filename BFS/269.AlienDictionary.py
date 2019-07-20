@@ -51,7 +51,8 @@ class Solution:
 
 ##################################################################################
 # Topological Sorting
-#     1. find indegrees and posts items 
+#     0. find all chars (construct the graph first)
+#     1. find indegrees and posts items
 #     2. bfs traverse
 #
 ##################################################################################
