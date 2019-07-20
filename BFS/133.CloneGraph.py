@@ -40,8 +40,8 @@ class Solution:
 
 ##################################################################################
 # 3 points:
-#     1. bfs get all get nodes
+#     1. bfs get all nodes
 #     2. using hash mapping clone every node
 #     3. clone edges.
-# 
+#
 ##################################################################################
